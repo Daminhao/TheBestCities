@@ -6,7 +6,7 @@ import pandas as pd
 import folium
 
 #load and prepare the data.
-csvpath = r'listcitys.csv'
+csvpath = r'dataBase.csv'
 df = pd.read_csv(csvpath)
 df = df[['Latitude','Longitude','City','Desc','Image','Icon']]
 df['Desc'] = df['Desc'].fillna('')
